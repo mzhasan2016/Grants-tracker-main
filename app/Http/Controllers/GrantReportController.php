@@ -18,10 +18,4 @@ class GrantReportController extends Controller
             'user' => Auth::user()
         ]);
     }
-
-    //Zee's code to overcome login problems
-    /*public function index()
-    {
-        return view('grants.applications');
-    }*/
 }

@@ -10,9 +10,10 @@ use App\Http\Controllers\GrantReportController;
 use App\Http\Controllers\GrantSpendingController;
 use App\Http\Controllers\MainCategoryController;
 use App\Http\Controllers\SubCategoryController;
-use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\FolderController;
+use App\Http\Controllers\FileController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,5 @@ Route::post('categories/subcategory',               [SubCategoryController::clas
 
 Route::get('settings',                              [SettingsController::class, 'index'])->name('settings');
 
-//Zee's code below
-Route::get('uploads',                              [UploadController::class, 'index'])->name('uploads.file');
+Route::get('files',                                [FileController::class, 'index'])->name('uploads.files');
 

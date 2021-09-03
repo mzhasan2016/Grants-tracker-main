@@ -3,19 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
-class GrantApplicationController extends Controller
+class FileController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    //Zee's code
     public function index()
     {
-        return view('grants.applications', [
-            'user' => Auth::user()
+        $user = Auth::user();
+
+        return view('uploads.files', [
+            'user' => $user
         ]);
     }
 }

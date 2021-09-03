@@ -24,8 +24,8 @@
                         Grant Reports
                     </x-nav-link>
 
-                    <x-nav-link href="{{ route('uploads.file') }}" :active="request()->routeIs('uploads.file')">
-                        Folder & File Uploads
+                    <x-nav-link href="{{ route('uploads.files') }}" :active="request()->routeIs('uploads.files')">
+                        Document Bank
                     </x-nav-link>
                 </div>
             </div>
@@ -95,8 +95,8 @@
                 Grant Reports
             </x-responsive-nav-link>
 
-            <x-responsive-nav-link href="{{ route('uploads.file') }}" :active="request()->routeIs('uploads.file')">
-                Folder & File Uploads
+            <x-responsive-nav-link href="{{ route('uploads.files') }}" :active="request()->routeIs('uploads.files')">
+                Document Bank
             </x-responsive-nav-link>
         </div>
 

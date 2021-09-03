@@ -8,7 +8,7 @@ use Auth;
 
 class GrantLiveController extends Controller
 {
-    /*public function __construct()
+    public function __construct()
     {
         $this->middleware('auth');
     }
@@ -19,11 +19,5 @@ class GrantLiveController extends Controller
             'user' => Auth::user(),
             'categories' => Category::all()
         ]);
-    }*/
-
-    //Zee's code to overcome login problems
-    public function index()
-    {
-        return view('grants.applications');
     }
 }
